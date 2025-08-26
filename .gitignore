@@ -199,3 +199,17 @@ README.html
 *.iml
 .idea
 .exercism
+
+# Maven output
+/target/
+
+# IDE
+.idea/
+*.iml
+
+# Node / frontend build
+node_modules/
+.vite/
+
+# Vaadin generated frontend code
+/frontend/generated/
