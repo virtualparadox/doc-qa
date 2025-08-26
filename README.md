@@ -13,6 +13,13 @@ Document Q:›A system built in pure Java
 
 ---
 
+## Screenshots
+
+<p float="left">
+  <img src="screenshot/001.png" alt="Query response" width="600"/>
+  <img src="screenshot/002.png" alt="Uploaded documents" width="600"/>
+</p>
+
 ## How it works
 
 At its core, `doc-qa` turns your documents into searchable knowledge and connects them to an AI reasoning service. The flow looks like this:
@@ -97,6 +104,8 @@ Models are loaded from a user-home directory: `${user.home}/.docqa/models/`
 - **Consistency:** Lucene requires all vectors in one index to have the same dimension. If you change embedding models, you must reindex.
 - **Windowing:** The reranker splits long passages into overlapping windows to avoid truncation bias.
 - **Fusion weights:** Retrieval scoring balance (vector vs. keyword) is tunable in `HybridRetrieverService`.
-
+- **API key:** You must set your OpenAI API key as a **VM argument** when running the application:
+  ```bash
+  -Dspring.ai.openai.api-key=sk-xxxxxx
 ---
 
