@@ -96,7 +96,32 @@ Models are loaded from a user-home directory: `${user.home}/.docqa/models/`
 - Any Spring AI-compatible `ChatModel` (local Ollama, OpenAI, etc.)
 - Currently using **GPT-5-mini**
 
+---
 
+## Model setup
+
+Before running the application, you need to download the embedding and reranker models.  
+A helper script is provided:
+
+```bash
+./download-models.sh
+```
+
+This will:
+
+- Create the directories ${user.home}/.docqa/models/retriever and ${user.home}/.docqa/models/reranker.
+- Download the ONNX model and tokenizer files from the configured URLs.
+- Verify their checksums before storing them.
+
+After running the script, you should have:
+```
+~/.docqa/models/retriever/model.onnx
+~/.docqa/models/retriever/model.onnx_data
+~/.docqa/models/retriever/tokenizer.json
+
+~/.docqa/models/reranker/model.onnx
+~/.docqa/models/reranker/tokenizer.json
+```
 ---
 
 ## Development notes
