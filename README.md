@@ -2,7 +2,7 @@
 Document Q:›A system built in pure Java
 
 > **Summary**  
-> **doc-qa** is an **Enterprise Document Q&A system** built in pure Java.  
+> **doc-qa** is an **Document Q&A system** built in pure Java.  
 > It implements a **Retrieval-Augmented Generation (RAG)** pipeline, which works in three main steps:
 >
 > 1. **Embedding** – Documents are split into passages and converted into multilingual dense vectors using an ONNX embedding model.
