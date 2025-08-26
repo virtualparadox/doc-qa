@@ -212,4 +212,4 @@ node_modules/
 .vite/
 
 # Vaadin generated frontend code
-/frontend/generated/
+src/main/frontend/generated/
