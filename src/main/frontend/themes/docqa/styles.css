@@ -1,0 +1,29 @@
+.askview-container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.demo-container {
+    margin-top: 1rem;
+}
+
+.demo-chip {
+    margin: 0.25rem;
+    margin-top: 1rem;
+    border-radius: 16px;
+    font-size: 1rem;
+    background-color: #2a2a3b;
+    color: white;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+.answer-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #2a2a3b;
+    color: white;
+    min-height: 100px;
+    width: 100%;
+}
